@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -d . ..html/tmp
+cp -d . ..html/tmp/. *.html
