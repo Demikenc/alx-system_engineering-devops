@@ -1,2 +1,3 @@
 #!/bin/bash
-printf "emoji-utf-U+1F615\n"
+ echo "\"(Ôo)'"
+
