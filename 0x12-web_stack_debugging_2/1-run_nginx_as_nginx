@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# fix nginx webserver by killing apache, modifing port to 8080 and restarting
+pkill apache2
+chmod 644 /etc/nginx/nginx.conf
+sed -i 's| 80 | 8080 |' /etc/nginx/sites-available/default
+sed -i 's|:80 |:8080 |' /etc/nginx/sites-available/default
+sudo -u nginx service nginx start
